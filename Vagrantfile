@@ -72,6 +72,26 @@ Vagrant.configure('2') do |config|
     ubuntu1310.vm.hostname = "#{cookbook}-ubuntu-1310"
   end
 
+  config.vm.define :ubuntu1404 do |ubuntu1404|
+    ubuntu1404.vm.box      = 'opscode-ubuntu-14.04'
+    ubuntu1404.vm.box_url  = 'http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.04_chef-provisionerless.box'
+    ubuntu1404.vm.hostname = "#{cookbook}-ubuntu-1404"
+    config.vm.provider "parallels" do |v, override|
+        override.vm.box = "parallels/ubuntu-14.04"
+        override.vm.box_url = "https://vagrantcloud.com/parallels/boxes/ubuntu-14.04"
+    end
+  end
+
+  config.vm.define :ubuntu1404 do |ubuntu1410|
+    ubuntu1410.vm.box      = 'opscode-ubuntu-14.10'
+    ubuntu1410.vm.box_url  = 'http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.10_chef-provisionerless.box'
+    ubuntu1410.vm.hostname = "#{cookbook}-ubuntu-1410"
+	config.vm.provider "parallels" do |v, override|
+        override.vm.box = "parallels/ubuntu-14.10"
+        override.vm.box_url = "https://vagrantcloud.com/parallels/boxes/ubuntu-14.10"
+    end
+  end
+
   config.vm.network :private_network, ip: '192.168.50.10'
 
   config.vm.provider 'virtualbox' do |v|
