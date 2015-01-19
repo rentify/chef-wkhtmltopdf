@@ -1,4 +1,4 @@
-# chef-wkhtmltopdf [![Build Status](https://secure.travis-ci.org/ballisticpain/chef-wkhtmltopdf.png?branch=master)](http://travis-ci.org/ballisticpain/chef-wkhtmltopdf)
+# chef-wkhtmltopdf [![Build Status](https://travis-ci.org/BallisticPain/chef-wkhtmltopdf.svg?branch=master)](http://travis-ci.org/BallisticPain/chef-wkhtmltopdf)
 
 ## Description
 
