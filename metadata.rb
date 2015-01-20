@@ -9,6 +9,8 @@ version '0.2.2'
 recipe 'wkhtmltopdf-update', 'Installs the latest wkhtmltoimage and wkhtmltopdf'
 recipe 'wkhtmltopdf-update::binary', 'Installs the latest wkhtmltoimage and wkhtmltopdf binaries'
 
+replaces 'wkhtmltopdf'
+
 supports 'amazon'
 supports 'centos'
 supports 'debian'
