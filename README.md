@@ -2,7 +2,7 @@
 
 ## Description
 
-Installs [wkhtmltopdf](http://wkhtmltopdf.org) static binaries. This cookbook is inspired by https://github.com/bflad/chef-wkhtmltopdf.
+Installs [wkhtmltopdf-update](http://wkhtmltopdf.org) static binaries. This cookbook is inspired by https://github.com/bflad/chef-wkhtmltopdf.
 
 Cookbook Compatibility:
  * chef-wkhtmltopdf 0.1.0: wkhtmltopdf 0.11.0_rc1
@@ -28,7 +28,7 @@ Cookbook Compatibility:
 
 ## Attributes
 
-These attributes are under the `node['wkhtmltopdf']` namespace.
+These attributes are under the `node['wkhtmltopdf-update']` namespace.
 
 Attribute | Description | Type | Default
 ----------|-------------|------|--------
@@ -41,8 +41,8 @@ version | wkhtmltopdf version to install | String | 0.12.2.1
 
 ## Recipes
 
-* `recipe[wkhtmltopdf]` Installs wkhtmltoimage and wkhtmltopdf
-* `recipe[wkhtmltopdf::binary]` Installs wkhtmltoimage and wkhtmltopdf static binaries
+* `recipe[wkhtmltopdf-update]` Installs wkhtmltoimage and wkhtmltopdf
+* `recipe[wkhtmltopdf-update::binary]` Installs wkhtmltoimage and wkhtmltopdf static binaries
 
 ## Usage
 

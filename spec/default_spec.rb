@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'wkhtmltopdf::default' do
+describe 'wkhtmltopdf-update::default' do
   let(:chef_run) do
     ChefSpec::Runner.new.converge(described_recipe)
   end
