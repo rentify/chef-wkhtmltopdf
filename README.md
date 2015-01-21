@@ -2,11 +2,9 @@
 
 ## Description
 
-Installs [wkhtmltopdf-update](http://wkhtmltopdf.org) static binaries. This cookbook is inspired by https://github.com/bflad/chef-wkhtmltopdf.
+Installs [wkhtmltopdf](http://wkhtmltopdf.org) static binaries. This cookbook is inspired by https://github.com/bflad/chef-wkhtmltopdf.
 
 Cookbook Compatibility:
- * chef-wkhtmltopdf 0.1.0: wkhtmltopdf 0.11.0_rc1
- * chef-wkhtmltopdf 0.2.0: wkhtmltopdf 0.12.0
  * chef-wkhtmltopdf 0.2.1: wkhtmltopdf 0.12.2
  * chef-wkhtmltopdf 0.2.2: wkhtmltopdf 0.12.2.1
 
@@ -19,6 +17,7 @@ Cookbook Compatibility:
 * Ubuntu 12.04
 * Ubuntu 13.04
 * Ubuntu 14.04
+* Ubuntu 14.10
 
 ### Cookbooks
 
@@ -62,6 +61,8 @@ Here's how you can quickly get testing or developing against the cookbook thanks
 You can then SSH into the running VM using the `vagrant ssh BOX` command.
 
 The VM can easily be stopped and deleted with the `vagrant destroy` command. Please see the official [Vagrant documentation](http://docs.vagrantup.com/v2/cli/index.html) for a more in depth explanation of available commands.
+
+All vagrant up BOX commands will use VirtualBox with the exception of ubuntu14* boxes being able to use either VirtualBox or Parallels depending on what your local provider is set to.
 
 ## Contributing
 
