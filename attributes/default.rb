@@ -23,5 +23,5 @@ else
   end
 end
 
-default['wkhtmltopdf-update']['package']     = "wkhtmltox-#{node['wkhtmltopdf-update']['version']}.1_linux-trusty-amd64.deb"
-default['wkhtmltopdf-update']['mirror_url']  = "http://downloads.sourceforge.net/project/wkhtmltopdf/#{node['wkhtmltopdf-update']['version']}.1/#{node['wkhtmltopdf-update']['package']}"
+default['wkhtmltopdf-update']['package']     = "wkhtmltox-#{node['wkhtmltopdf-update']['version']}_linux-trusty-amd64.deb"
+default['wkhtmltopdf-update']['mirror_url']  = "http://downloads.sourceforge.net/project/wkhtmltopdf/#{node['wkhtmltopdf-update']['version']}/#{node['wkhtmltopdf-update']['package']}"

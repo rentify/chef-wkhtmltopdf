@@ -5,8 +5,8 @@
 Installs [wkhtmltopdf](http://wkhtmltopdf.org) static binaries. This cookbook is inspired by https://github.com/bflad/chef-wkhtmltopdf.
 
 Cookbook Compatibility:
- * chef-wkhtmltopdf 0.2.1: wkhtmltopdf 0.12.2
- * chef-wkhtmltopdf 0.2.2: wkhtmltopdf 0.12.2.1
+ * chef-wkhtmltopdf 0.3.0: wkhtmltopdf 0.12.2
+ * chef-wkhtmltopdf 0.3.1: wkhtmltopdf 0.12.2.1
 
 ## Requirements
 
