@@ -3,6 +3,7 @@ cookbook = 'wkhtmltopdf-update'
 
 Vagrant.configure('2') do |config|
   config.berkshelf.enabled = true
+  config.berkshelf.berksfile_path = "./Berksfile"
   config.cache.auto_detect = true
   config.omnibus.chef_version = :latest
 
@@ -82,7 +83,7 @@ Vagrant.configure('2') do |config|
     end
   end
 
-  config.vm.define :ubuntu1404 do |ubuntu1410|
+  config.vm.define :ubuntu1410 do |ubuntu1410|
     ubuntu1410.vm.box      = 'opscode-ubuntu-14.10'
     ubuntu1410.vm.box_url  = 'http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.10_chef-provisionerless.box'
     ubuntu1410.vm.hostname = "#{cookbook}-ubuntu-1410"
