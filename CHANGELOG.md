@@ -1,3 +1,8 @@
+## 0.4.0
+
+* Enhancement: [#2]: Changes to use chef package resource to install wkhtmltopdf
+* Enhancement: Adds chef_wkhtmltopdf_cleanup recipe to remove wkhtmltopdf installed by previous chef-wkhtmltopdf cookbook
+
 ## 0.2.0
 
 * Bugfix: Removed extraneous wkhtmltoimage/wkhtmltopdf attributes
