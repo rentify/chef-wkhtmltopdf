@@ -3,6 +3,7 @@ default['wkhtmltopdf']['version']     = '0.12.0'
 default['wkhtmltopdf']['install_dir'] = '/usr/local/bin'
 default['wkhtmltopdf']['lib_dir']     = ''
 
+default['wkhtmltopdf-update']['major_version'] = '0.12'
 default['wkhtmltopdf-update']['version']     = '0.12.2.1'
 
 case node['platform_family']
@@ -35,4 +36,4 @@ else
   end
 end
 
-default['wkhtmltopdf-update']['mirror_url']  = "http://downloads.sourceforge.net/project/wkhtmltopdf/#{node['wkhtmltopdf-update']['version']}/#{node['wkhtmltopdf-update']['package']}"
+default['wkhtmltopdf-update']['mirror_url']  = "http://download.gna.org/wkhtmltopdf/#{node['wkhtmltopdf-update']['major_version']}/#{node['wkhtmltopdf-update']['version']}/#{node['wkhtmltopdf-update']['package']}"

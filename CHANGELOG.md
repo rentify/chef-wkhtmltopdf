@@ -1,3 +1,7 @@
+## 0.4.1
+
+* Update the mirror URL to use gna.org instead of sourceforge
+
 ## 0.4.0
 
 * Enhancement: [#2]: Changes to use chef package resource to install wkhtmltopdf
