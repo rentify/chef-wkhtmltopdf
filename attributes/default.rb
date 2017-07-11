@@ -36,4 +36,4 @@ else
   end
 end
 
-default['wkhtmltopdf-update']['mirror_url'] = "http://download.gna.org/wkhtmltopdf/#{node['wkhtmltopdf-update']['major_version']}/#{node['wkhtmltopdf-update']['version']}/#{node['wkhtmltopdf-update']['package']}"
+default['wkhtmltopdf-update']['mirror_url'] = "https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/#{node['wkhtmltopdf-update']['version']}/#{node['wkhtmltopdf-update']['package']}"
